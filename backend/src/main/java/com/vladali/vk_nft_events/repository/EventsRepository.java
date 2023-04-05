@@ -1,4 +1,4 @@
-package com.vladali.vk_nft_events.model.repository;
+package com.vladali.vk_nft_events.repository;
 
 import com.vladali.vk_nft_events.model.Events;
 import org.springframework.data.jpa.repository.JpaRepository;

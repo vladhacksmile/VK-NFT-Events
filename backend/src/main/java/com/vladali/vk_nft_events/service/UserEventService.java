@@ -2,8 +2,8 @@ package com.vladali.vk_nft_events.service;
 
 import com.vladali.vk_nft_events.dto.UserNftDto;
 import com.vladali.vk_nft_events.model.UsersEvents;
-import com.vladali.vk_nft_events.model.repository.EventsRepository;
-import com.vladali.vk_nft_events.model.repository.UserEventsRepository;
+import com.vladali.vk_nft_events.repository.EventsRepository;
+import com.vladali.vk_nft_events.repository.UserEventsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
