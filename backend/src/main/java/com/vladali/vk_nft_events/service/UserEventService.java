@@ -20,8 +20,8 @@ public class UserEventService {
     public UsersEvents addUserEvent(UserNftDto userNftDto, Long tokenId){
         UsersEvents usersEvents = new UsersEvents();
         usersEvents.setUserId(userNftDto.getUserId());
-        usersEvents.setEventId(usersEvents.getEventId());
-        usersEvents.setWalletAddress(usersEvents.getWalletAddress());
+        usersEvents.setEventId(userNftDto.getEventId());
+        usersEvents.setWalletAddress(userNftDto.getWallet_address());
         usersEvents.setTokenId(tokenId);
         userEventsRepository.save(usersEvents);
         return usersEvents;

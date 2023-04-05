@@ -146,10 +146,11 @@ public class AdminController {
 
 
 //    TODO make endpoint for get usernfts by event id
+//    TODO выводи полную инфу по nft в методе user/{id}/events
 //    TODO slf4j
 //    TODO exception handling and validation
 //    TODO delegate bussines logic to component
 //    TODO docker-compose
 //    TODO github actions
-//
+
 }

@@ -14,7 +14,8 @@ public class UserNftDto {
     @Override
     public String toString() {
         return "UserNftDto{" +
-                "wallet_address='" + wallet_address + '\'' +
+                "userId=" + userId +
+                ", wallet_address='" + wallet_address + '\'' +
                 ", eventId=" + eventId +
                 '}';
     }
