@@ -143,6 +143,11 @@ public class AdminController {
         return userEventService.getEventsForUser(id);
     }
 
+    @GetMapping("group/{groupId}/events/{userId}")
+    public @ResponseBody Iterable<UsersEvents> getEventsForUser(@PathVariable Long groupId, @PathVariable Long userId) {
+        return userEventService.getEventsFromGroupAndUser(userId, groupId);
+    }
+
 
 
 //    TODO make endpoint for get usernfts by event id

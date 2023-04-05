@@ -1,10 +1,12 @@
 package com.vladali.vk_nft_events.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @NoArgsConstructor
 @Getter
@@ -33,6 +35,9 @@ public class Events {
     private String dataUri;
 
     private Long tokenId;
+//    @OneToMany(targetEntity = UsersEvents.class, mappedBy = "events", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+//    @JsonIgnore
+//    private Set<UsersEvents> usersEvents;
 
     public Events(String name, String description, String time, String city, String address, Long creatorId, Long groupId, String walletAddress, String smartContracts, String dataUri, Long tokenId) {
         this.name = name;
@@ -48,7 +53,6 @@ public class Events {
         this.tokenId = tokenId;
     }
 
-
     @Override
     public String toString() {
         return "Events{" +
@@ -61,7 +65,7 @@ public class Events {
                 ", creatorId=" + creatorId +
                 ", groupId=" + groupId +
                 ", walletAddress='" + walletAddress + '\'' +
-                ", smartContracts=" + smartContracts +
+                ", smartContracts='" + smartContracts + '\'' +
                 ", dataUri='" + dataUri + '\'' +
                 ", tokenId=" + tokenId +
                 '}';

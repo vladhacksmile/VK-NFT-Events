@@ -9,4 +9,5 @@ import java.util.List;
 public interface UserEventsRepository extends JpaRepository<UsersEvents, UsersEventsKey> {
 
     List<UsersEvents> getUsersEventsByUserId(Long id);
+    List<UsersEvents> getUsersEventsByUserIdAndEventGroupId(Long userId, Long groupId);
 }
